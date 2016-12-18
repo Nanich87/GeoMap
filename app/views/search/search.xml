@@ -1,0 +1,30 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" 
+      navigatedTo="navigatedTo" 
+      swipe="swipe">
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <GridLayout rows="*" columns="auto,*,auto">
+          <Label col="0" class="action-bar-button fa" text="&#xf104;" tap="back" />
+          <TextField col="1" id="keyword" hint="Search..." text="" />
+          <Label col="2" class="action-bar-button fa" text="&#xf002;" tap="search" />
+        </GridLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+  <GridLayout class="layout" rows="auto,auto,*,auto" columns="1*,1*,1*">
+    <Label class="search-result" row="0" colspan="3" text="{{ 'Total Points: ' + pointsCount }}" />
+    <ActivityIndicator row="1" colSpan="3" busy="{{ busy }}" horizontalAlignment="center" verticalAlignment="center" />
+    <ListView id="point-collection" row="2" colspan="3" verticalAlignment="top" items="{{ pointCollection }}" itemTap="viewDetails">
+      <ListView.itemTemplate>
+        <GridLayout class="list-item" columns="1*,5*">
+          <Label col="0" textWrap="true" text="{{ name }}" />
+          <Label col="1" textWrap="true" text="{{ description }}" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    <Button class="nav-button fa" row="3" col="0" text="&#xf104; Prev" tap="previousPage" />
+    <Label class="nav-text" row="3" col="1" horizontalAlignment="center" text="{{ 'Page ' + currentPage + ' of ' + totalPages }}" />
+    <Button class="nav-button fa" row="3" col="2" text="Next &#xf105;" tap="nextPage" />
+  </GridLayout>
+</Page>

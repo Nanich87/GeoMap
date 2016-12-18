@@ -1,0 +1,19 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" 
+      navigatedTo="navigatedTo" 
+      swipe="swipe">
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <GridLayout rows="*" columns="auto,*,auto">
+          <Label col="0" class="action-bar-button fa" text="&#xf104;" tap="back" />
+          <Label col="1" class="title fa" text="Save File" />
+          <Label col="2" class="action-bar-button fa" text="&#xf093;" tap="loadFile" />
+        </GridLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout class="layout">
+    <TextField class="input" id="filename" hint="Filename..." text="" />
+    <Button class="button" text="Save" tap="saveFile" />
+  </StackLayout>
+</Page>

@@ -1,0 +1,26 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" 
+      navigatedTo="navigatedTo" 
+      swipe="swipe">
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <GridLayout rows="*" columns="auto,*">
+          <Label col="0" class="action-bar-button fa" text="&#xf104;" tap="back" />
+          <Label col="1" class="title fa" text="Load Files" />
+        </GridLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout class="layout">
+    <Button class="button" text="List Directory" tap="listFiles" />
+    <Label class="path fa" text="{{ '&#xf07b; ' + directory }}" />
+    <ListView items="{{ entitiesCollection }}" itemTap="readFile">
+      <ListView.itemTemplate>
+        <GridLayout columns="auto,*">
+          <Label col="0" class="list-item fa" visibility="{{ isFolder ? 'visible' : 'collapsed' }}" text="&#xf07b;" />
+          <Label col="1" class="list-item" textWrap="true" text="{{ name }}" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>

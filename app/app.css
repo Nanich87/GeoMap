@@ -1,0 +1,62 @@
+﻿.fa {
+  font-family: FontAwesome, fontawesome-webfont;
+}
+
+.action-bar-button {
+    color: #5d5d5d;
+    font-size: 28;
+    margin: 0 2;
+    padding: 8;
+    text-align: center;
+    vertical-align: center;
+}
+
+.title {
+    color: #3d3d3d;
+    font-size: 24;
+    margin: 0 10;
+    text-align: left;
+    vertical-align: center;
+}
+
+.layout {
+    margin: 10 5;
+}
+
+.input {
+    padding: 15;
+}
+
+.button {
+    background-color: #3598db;
+    color: #ffffff;
+    padding: 3 0;
+    margin: 3 0;
+    font-size: 16;
+    border-radius: 2;
+    height: 50;
+}
+
+/* Text Size */
+
+.text-small {
+    font-size: 14;
+}
+
+.text-medium {
+    font-size: 16;
+}
+
+.text-large {
+    font-size: 20;
+}
+
+/* Text Color */
+
+.red {
+    color: #ff4d4d;
+}
+
+.green {
+    color: #86b300;
+}

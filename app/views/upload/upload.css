@@ -1,0 +1,11 @@
+.path {
+    font-size: 16;
+    margin: 5;
+    padding: 5;
+}
+
+.list-item {
+    font-size: 14;
+    padding: 15;
+    vertical-align: center;
+}

@@ -1,0 +1,28 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" 
+      xmlns:map="nativescript-mapbox" 
+      navigatingFrom="onNavigatingFrom" 
+      loaded="loaded" 
+      navigatedTo="navigatedTo">
+  <Page.actionBar>
+    <ActionBar android.iconVisibility="always">
+      <ActionBar.titleView>
+        <GridLayout rows="*" columns="*,auto,auto,auto,auto,auto,auto,auto">
+          <Label class="title" col="0" text="GeoMap" />
+          <ActivityIndicator col="1" busy="{{ busy }}" />
+          <Label col="2" class="action-bar-button fa" text="&#xf002;" tap="search" />
+          <Label col="3" class="action-bar-button fa" text="&#xf041;" tap="getLocation" />
+          <Label col="4" class="action-bar-button fa" text="&#xf07b;" tap="upload" />
+          <Label col="5" class="action-bar-button fa" text="&#xf0c7;" tap="save" />
+          <Label col="6" class="action-bar-button fa" text="&#xf12d;" tap="removeMarkers" />
+          <Label col="7" class="action-bar-button fa" text="&#xf019;" tap="download" />
+        </GridLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+  <GridLayout class="layout" rows="auto" columns="auto,auto,auto,*" verticalAlignment="top">
+    <Label class="label text-medium fa" horizontalAlignment="left" row="0" col="0" text="&#xf278; Map Data:" />
+    <Label class="button-label text-medium fa red" horizontalAlignment="left" row="0" col="1" text="&#xf041; Triangular" tap="getTriangularPoints" />
+    <Label class="button-label text-medium fa green" horizontalAlignment="left" row="0" col="2" text="&#xf041; Local" tap="getLocalNetworkPoints" />
+    <Label class="label text-medium" row="0" col="3" horizontalAlignment="center" visibility="{{ downloading ? 'visible' : 'collapsed' }}" text="{{ 'Progress: ' + progress + '%' }}" />
+  </GridLayout>
+</Page>

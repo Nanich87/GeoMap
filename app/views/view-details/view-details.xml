@@ -1,0 +1,17 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" 
+      navigatedTo="navigatedTo" 
+      swipe="swipe">
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <GridLayout rows="*" columns="auto,*">
+          <Label col="0" class="action-bar-button fa" text="&#xf104;" tap="back" />
+          <Label col="1" class="title fa" text="View Details" />
+        </GridLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout class="layout">
+
+  </StackLayout>
+</Page>

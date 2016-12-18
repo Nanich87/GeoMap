@@ -1,0 +1,28 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.geomap",
+    "tns-ios": {
+      "version": "2.3.0"
+    },
+    "tns-android": {
+      "version": "2.4.1"
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "moment": "^2.17.1",
+    "nativescript-geolocation": "0.0.15",
+    "nativescript-mapbox": "2.2.4",
+    "nativescript-screen-orientation": "^1.0.2",
+    "nativescript-toast": "^1.4.1",
+    "tns-core-modules": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.10.4",
+    "babel-types": "6.11.1",
+    "babylon": "6.8.4",
+    "lazy": "1.0.11",
+    "nativescript-dev-typescript": "^0.3.2",
+    "typescript": "^1.8.2"
+  }
+}
