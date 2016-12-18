@@ -1,0 +1,34 @@
+{
+	"name": "geomap",
+	"main": "app.js",
+	"version": "0.0.1",
+	"author": "nanich87",
+	"description": "GeoMap",
+	"license": "Apache-2.0",
+	"keywords": [
+		"telerik",
+		"mobile",
+		"nativescript",
+		"{N}",
+		"tns",
+		"appbuilder",
+		"template"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Nanich87/GeoMap.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Nanich87/GeoMap/issues"
+	},
+	"homepage": "https://github.com/Nanich87/GeoMap",
+	"android": {
+		"v8Flags": "--expose_gc"
+	},
+	"dependencies": {
+		"nativescript-theme-core": "^0.2.1"
+	},
+	"devDependencies": {
+		"nativescript-dev-android-snapshot": "^0.*.*"
+	}
+}
